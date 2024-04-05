@@ -1,0 +1,9 @@
+test.ipynb
+Lib/
+Scripts/
+share/
+Include/
+result_images/
+pyvenv.cfg
+.vscode
+__pycache__
