@@ -7,8 +7,3 @@ result_images/
 pyvenv.cfg
 .vscode
 __pycache__
-
-# Ignore everything in this directory
-*
-# Except this file
-!.gitignore
