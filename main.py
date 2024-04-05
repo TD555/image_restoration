@@ -138,5 +138,5 @@ async def restore(file: UploadFile=File(None)):
     return StreamingResponse(io.BytesIO(img_bytes), headers=headers)
 
 
-if __name__ == "__main__":
-    uvicorn.run("main:app", workers=5, host='192.168.0.175')
+# if __name__ == "__main__":
+#     uvicorn.run("main:app", workers=5, host='0.0.0.0')
