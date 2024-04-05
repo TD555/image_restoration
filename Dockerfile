@@ -13,6 +13,8 @@ COPY --chown=service-davtashen:service-davtashen .   /var/www/davtashen/davtashe
 
 COPY --chown=service-davtashen:service-davtashen ./requirements.txt  /var/www/davtashen/davtashen-service/requirements.txt
 
+ENV PYTHONPATH "${PYTHONPATH}:/var/www/davtashen/davtashen-service"
+
 ENV PATH="$PATH:/home/service-davtashen/.local/bin"
 
 RUN pip3 install torch==2.0.0+cpu torchvision==0.15.0+cpu -f https://download.pytorch.org/whl/cpu/torch_stable.html
