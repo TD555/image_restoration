@@ -19,4 +19,4 @@ RUN pip3 install torch==2.0.0+cpu torchvision==0.15.0+cpu -f https://download.py
 
 RUN python3 -m pip install --no-cache-dir -r requirements.txt && rm -rf ~/.cache/pip
 
-CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8594", "--workers", "5"]
+CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000", "--workers", "5"]
