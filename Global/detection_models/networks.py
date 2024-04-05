@@ -4,8 +4,10 @@
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
-from detection_models.Synchronized_BatchNorm_PyTorch.sync_batchnorm import DataParallelWithCallback
-from detection_models.antialiasing import Downsample
+import sys
+sys.path.append("Global/detection_models")
+from Synchronized_BatchNorm_PyTorch.sync_batchnorm import DataParallelWithCallback
+from antialiasing import Downsample
 
 
 class UNet(nn.Module):
