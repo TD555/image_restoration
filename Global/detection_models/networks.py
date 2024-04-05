@@ -4,7 +4,7 @@
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
-from Global.detection_models.Synchronized_BatchNorm_PyTorch.sync_batchnorm.replicate import DataParallelWithCallback
+from Global.detection_models.sync_batchnorm.replicate import DataParallelWithCallback
 from Global.detection_models.antialiasing import Downsample
 
 
